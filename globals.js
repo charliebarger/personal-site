@@ -19,6 +19,11 @@ const GlobalStyle = createGlobalStyle`
     min-height:100vh;
   }
 
+  svg {
+ height: auto;
+ width: 50%;
+}
+
 `;
 
 export default GlobalStyle;

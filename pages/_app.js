@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Header from "../componenets/Header";
+import Header from "../componenets/Header/Header";
 import GlobalStyle from "../globals";
 import Head from "next/head";
 import { NavContext } from "../utils/NavContext";

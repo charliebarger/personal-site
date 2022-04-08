@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { NavContext } from "../utils/NavContext";
+import { NavContext } from "../../utils/NavContext";
 import { StyledHamburgerIcon, StyledHamburgerWrapper } from "./HamburgerStyles";
 const Hamburger = () => {
   const { closed, setClosed } = useContext(NavContext);

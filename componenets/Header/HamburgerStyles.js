@@ -47,6 +47,7 @@ const StyledHamburgerIcon = styled.div`
         &:after,
         &:before {
           transition: all 0.5s;
+          background: grey;
         }
       `}
 

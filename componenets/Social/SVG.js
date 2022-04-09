@@ -1,7 +1,7 @@
 import React from "react";
-import { StlyedSocialLink } from "./SocialLinksStyles";
+import { StlyedSocialLogo } from "./SocialLinksStyles";
 export const SVG = ({ children, ...rest }) => {
-  return <StlyedSocialLink {...rest}>{children}</StlyedSocialLink>;
+  return <StlyedSocialLogo {...rest}>{children}</StlyedSocialLogo>;
 };
 
 export default SVG;

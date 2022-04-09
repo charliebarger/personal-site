@@ -1,14 +1,13 @@
-import Link from "next/link";
 import React from "react";
 import { StyledHeader, StyledLogo } from "./HeaderStyles";
 import Hamburger from "./Hamburger";
-import SlidingNav from "./SlidingNav";
+import Nav from "./Nav";
 export const Header = () => {
   return (
     <StyledHeader>
       <StyledLogo>Charlie Barger</StyledLogo>
       <Hamburger />
-      <SlidingNav></SlidingNav>
+      <Nav></Nav>
     </StyledHeader>
   );
 };

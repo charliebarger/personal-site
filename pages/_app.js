@@ -1,17 +1,21 @@
 import React, { useState } from "react";
+import { Normalize } from "styled-normalize";
 import Header from "../componenets/Header/Header";
-import GlobalStyle from "../globals";
+import GlobalStyles from "../styles/GlobalStyles";
 import Head from "next/head";
 import { NavContext } from "../utils/NavContext";
-
+import Theme from "../styles/theme";
 function MyApp({ Component, pageProps }) {
   const [closed, setClosed] = useState(false);
   return (
-    <NavContext.Provider value={{ closed, setClosed }}>
-      <GlobalStyle />
-      <Header />
-      <Component {...pageProps} />
-    </NavContext.Provider>
+    <Theme>
+      <NavContext.Provider value={{ closed, setClosed }}>
+        <GlobalStyles />
+        <Normalize />
+        <Header />
+        <Component {...pageProps} />
+      </NavContext.Provider>
+    </Theme>
   );
 }
 

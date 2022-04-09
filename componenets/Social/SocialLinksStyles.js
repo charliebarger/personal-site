@@ -1,19 +1,34 @@
 import styled, { css } from "styled-components";
 
-const StlyedSocialLink = styled.svg`
-  fill: black;
+const StyledSocialLink = styled.a`
   height: 40px;
   width: 40px;
+  @media ${({ theme }) => theme.breakPoints.tablet} {
+    height: 30px;
+    width: 30px;
+  }
+`;
+
+const StlyedSocialLogo = styled.svg`
+  fill: black;
+  height: 100%;
+  width: 100%;
   &:hover {
     transform: scale(1.1);
   }
 `;
 
-const StyledSocialSlidingWrapper = styled.div`
+const StyledSocialWrapper = styled.div`
   opacity: 0;
   display: flex;
   gap: 8px;
   margin-bottom: 32px;
+  @media ${({ theme }) => theme.breakPoints.tablet} {
+    opacity: 1;
+    margin-bottom: 0;
+    margin-left: 32px;
+    gap: 0;
+  }
 `;
 
-export { StlyedSocialLink, StyledSocialSlidingWrapper };
+export { StlyedSocialLogo, StyledSocialWrapper, StyledSocialLink };

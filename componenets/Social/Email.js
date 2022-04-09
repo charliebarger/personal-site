@@ -1,8 +1,9 @@
 import React from "react";
 import SVG from "./SVG";
+import { StyledSocialLink } from "./SocialLinksStyles";
 export const Email = () => {
   return (
-    <a href="mailto: charliebarger04@gmail.com">
+    <StyledSocialLink href="mailto: charliebarger04@gmail.com">
       <SVG
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 24 24"
@@ -12,7 +13,7 @@ export const Email = () => {
         <rect x="3" y="5" width="18" height="14" rx="2" />
         <polyline points="3 7 12 13 21 7" />
       </SVG>
-    </a>
+    </StyledSocialLink>
   );
 };
 

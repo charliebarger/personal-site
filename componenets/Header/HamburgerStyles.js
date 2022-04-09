@@ -8,6 +8,9 @@ const StyledHamburgerWrapper = styled.button`
   margin-left: auto;
   positition: relative;
   z-index: 3;
+  @media ${({ theme }) => theme.breakPoints.tablet} {
+    display: none;
+  }
 `;
 
 const StyledHamburgerIcon = styled.div`

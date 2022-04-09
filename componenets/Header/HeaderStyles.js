@@ -9,7 +9,7 @@ const StyledHeader = styled.header`
 const StyledLogo = styled.div`
   font-size: 1.5rem;
   font-weight: 600;
-  font-family: Roboto Slab;
+  font-family: ${({ theme }) => theme.fonts.serifPrimary};
 `;
 
 export { StyledHeader, StyledLogo };

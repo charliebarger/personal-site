@@ -1,20 +1,15 @@
 import React from "react";
-import Image from "next/image";
-import { StyledSocialSlidingWrapper } from "./SocialLinksStyles";
-import githubSvg from "../../public/github.svg";
-import { SVG } from "./SVG";
+import { StyledSocialWrapper } from "./SocialLinksStyles";
 import LinkedIn from "./LinkedIn";
-import Github from "./Github";
+import GitHub from "./GitHub";
 import Email from "./Email";
-import Link from "next/link";
 export const SocialLinks = () => {
-  const icons = [];
   return (
-    <StyledSocialSlidingWrapper>
+    <StyledSocialWrapper>
       <LinkedIn />
-      <Github />
+      <GitHub />
       <Email />
-    </StyledSocialSlidingWrapper>
+    </StyledSocialWrapper>
   );
 };
 

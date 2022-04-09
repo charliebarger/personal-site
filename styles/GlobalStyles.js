@@ -1,14 +1,13 @@
 import { createGlobalStyle } from "styled-components";
 
-const GlobalStyle = createGlobalStyle`
+const GlobalStyles = createGlobalStyle`
   html {
     font-size:16px;
     box-sizing: border-box;
-    font-family:"Roboto, Arial, Helvetica, sans-serif";
+    font-family:${({ theme }) => theme.fonts.serifPrimary};
   }
   *, *:before, *:after {
     box-sizing: inherit;
-    font-family:"Roboto", Arial, Helvetica, sans-serif;
   }
   }
 
@@ -18,12 +17,6 @@ const GlobalStyle = createGlobalStyle`
     position:relative;
     min-height:100vh;
   }
-
-  svg {
- height: auto;
- width: 50%;
-}
-
 `;
 
-export default GlobalStyle;
+export default GlobalStyles;

@@ -5,7 +5,7 @@ import {
   StyledNavItemWrapper,
   StyledNavItem,
 } from "./SlidingNavStyles";
-import SocialLinks from "./SocialLinks";
+import SocialLinks from "../Social/SocialLinks";
 const SlidingNav = () => {
   const { closed, setClosed } = useContext(NavContext);
   return (
@@ -15,8 +15,8 @@ const SlidingNav = () => {
         <StyledNavItem onClick={() => setClosed(false)}>Skills</StyledNavItem>
         <StyledNavItem onClick={() => setClosed(false)}>Projects</StyledNavItem>
         <StyledNavItem onClick={() => setClosed(false)}>Contact</StyledNavItem>
-        <SocialLinks />
       </StyledNavItemWrapper>
+      <SocialLinks />
     </StyledSlidingNav>
   );
 };

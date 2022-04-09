@@ -13,7 +13,6 @@ const slideIn = keyframes`
 
 const StyledSlidingNav = styled.nav`
   padding: 2rem;
-  gap: 1rem;
   top: 0;
   bottom: 0;
   left: 0;
@@ -26,8 +25,6 @@ const StyledSlidingNav = styled.nav`
   background: white;
   color: white;
   z-index: 1;
-  & li:nth-child(1) {
-  }
   ${({ closed }) =>
     !closed &&
     css`
@@ -47,6 +44,9 @@ const StyledSlidingNav = styled.nav`
       }
       & li:nth-child(4) {
         animation: 0.5s ${slideIn} ease-in-out 1s forwards;
+      }
+      & div {
+        animation: 0.5s ${slideIn} ease-in-out 1.25s forwards;
       }
     `}
 `;
@@ -70,6 +70,7 @@ const StyledNavItemWrapper = styled.ul`
   flex-direction: column;
   align-items: center;
   gap: 32px;
+  margin-bottom: 32px;
 `;
 const StyledNavItem = styled.li`
   color: grey;

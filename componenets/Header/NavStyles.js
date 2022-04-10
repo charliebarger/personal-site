@@ -1,5 +1,4 @@
 import styled, { css, keyframes } from "styled-components";
-import Link from "next/link";
 const slideIn = keyframes`
   0% {
     opacity:0;
@@ -99,6 +98,7 @@ const StyledNavItemWrapper = styled.ul`
     font-size: 1.25rem;
   }
 `;
+
 const StyledNavItem = styled.li`
   color: grey;
   position: relative;
@@ -126,38 +126,29 @@ const StyledNavItem = styled.li`
     color: black;
     top: 2px;
     &:after {
-      content: "";
-      display: block;
-      height: 1px;
       margin: 0 auto;
       margin-top: 3px;
     }
     &:hover {
       color: black;
-
       &:after {
-        content: "";
-        display: block;
-        height: 1px;
         margin: 0 auto;
         margin-top: 3px;
-        background: red;
-        width: 80%;
+        width: 0;
+        animation: none;
       }
     }
     ${({ active }) =>
       active &&
       css`
         &:after {
-          content: "";
-          display: block;
-          height: 1px;
-          margin: 5px auto;
+          width: 80%;
           background: red;
-          animation: 0.25s ${grow} ease-in-out forwards;
-          @media ${({ theme }) => theme.breakPoints.tablet} {
-            margin: 0 auto;
-            margin-top: 3px;
+        }
+        &:hover {
+          color: black;
+          &:after {
+            width: 80%;
           }
         }
       `}
@@ -172,7 +163,11 @@ const StyledLink = styled.a`
     color: black;
   }
   @media ${({ theme }) => theme.breakPoints.tablet} {
-    color: black;
+    ${({ active }) =>
+      active &&
+      css`
+        color: black;
+      `}
   }
 `;
 

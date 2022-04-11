@@ -11,18 +11,19 @@ const slideIn = keyframes`
 `;
 
 const StyledNav = styled.nav`
-  padding: 2rem;
+  padding: 22px;
   top: 0;
-  bottom: 0;
+  bottom:0;
   left: 0;
+  height:100vh;
   width: 100vw;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   position: absolute;
-  background: white;
   color: white;
+  background:white;
   z-index: 1;
   ${({ closed }) =>
     !closed &&
@@ -53,6 +54,7 @@ const StyledNav = styled.nav`
       flex-direction:row;
       position: static;
       padding:0;
+      height:auto;
       width:auto;
       display: flex;
       align-items: center;

@@ -10,7 +10,7 @@ function MyApp({ Component, pageProps }) {
   return (
     <Theme>
       <NavContext.Provider value={{ closed, setClosed }}>
-        <GlobalStyles />
+        <GlobalStyles closed={closed} />
         <Normalize />
         <Header />
         <Component {...pageProps} />

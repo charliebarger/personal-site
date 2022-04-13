@@ -2,7 +2,7 @@ import { NavContext } from "../../utils/NavContext";
 import React, { useContext } from "react";
 import NavLink from "./NavLink";
 import { StyledNav, StyledNavItemWrapper } from "./NavStyles";
-import SocialLinks from "../Social/SocialLinks";
+import SocialLinks from "../social/SocialLinks";
 const Nav = () => {
   const { closed, setClosed } = useContext(NavContext);
   return (

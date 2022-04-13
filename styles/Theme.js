@@ -7,7 +7,8 @@ const minWidth = (number) => {
 
 const theme = {
   breakPoints: {
-    mobile: minWidth(420),
+    mobileSm: minWidth(420),
+    mobileLg: minWidth(500),
     tablet: minWidth(768),
     laptop: minWidth(1024),
     desktop: minWidth(1200),

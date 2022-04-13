@@ -29,6 +29,10 @@ const StyledAboutWrapper = styled.div`
 const StyledAboutInfo = styled.p`
   flex: 1;
   min-width: 300px;
+  font-size: 1rem;
+  @media ${({ theme }) => theme.breakPoints.laptop} {
+    font-size: 1.15rem;
+  }
 `;
 
 const StyledAboutHeadshotWrapper = styled.div`
@@ -38,6 +42,7 @@ const StyledAboutHeadshotWrapper = styled.div`
 
 const StyledImageWrapper = styled.div`
   width: 75%;
+  max-width: 350px;
   margin: auto;
   display: flex;
   box-shadow: 30px 30px 0 rgb(40 174 176);

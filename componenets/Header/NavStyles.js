@@ -13,9 +13,9 @@ const slideIn = keyframes`
 const StyledNav = styled.nav`
   padding: 22px;
   top: 0;
-  bottom:0;
+  bottom: 0;
   left: 0;
-  height:100vh;
+  height: 100vh;
   width: 100vw;
   display: flex;
   flex-direction: column;
@@ -23,7 +23,7 @@ const StyledNav = styled.nav`
   justify-content: center;
   position: absolute;
   color: white;
-  background:white;
+  background: white;
   z-index: 1;
   ${({ closed }) =>
     !closed &&
@@ -51,23 +51,24 @@ const StyledNav = styled.nav`
     `}
 
     @media ${({ theme }) => theme.breakPoints.tablet} {
-      flex-direction:row;
-      position: static;
-      padding:0;
-      height:auto;
-      width:auto;
-      display: flex;
-      align-items: center;
-      background: white;
-      color: white;
-      margin-left:auto;
-      && li {
-        animation: none;
-      }
-      & div {
-        animation: none;
-      }
-    `;
+    flex-direction: row;
+    position: static;
+    padding: 0;
+    height: auto;
+    width: auto;
+    display: flex;
+    align-items: center;
+    background: white;
+    color: white;
+    margin-left: auto;
+    && li {
+      animation: none;
+    }
+    & div {
+      animation: none;
+    }
+  }
+`;
 
 const grow = keyframes`
   from {

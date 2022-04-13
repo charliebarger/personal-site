@@ -1,17 +1,21 @@
 import Head from "next/head";
 import Image from "next/image";
-import { StyledH1, StyledH2 } from "../componenets/Body/about/AboutStyles";
-import About from "../componenets/Body/about/About";
-import Skills from "../componenets/Body/skills/Skills";
+import Welcome from "../componenets/body/welcome/WelcomeSection";
+import {
+  StyledContent,
+  StyledH1,
+  StyledH2,
+} from "../componenets/body/welcome/WecomeStyles";
+import About from "../componenets/body/about/AboutSection";
+import Skills from "../componenets/body/skills/SkillsSection";
+import ProjectSection from "../componenets/body/projects/ProjectSection";
 export default function Home() {
   return (
     <main>
-      <div className="content">
-        <StyledH1>Hello, I'm Charlie</StyledH1>
-      </div>
-      <StyledH2>Full Stack Developer</StyledH2>
+      <Welcome />
       <About />
       <Skills />
+      <ProjectSection />
     </main>
   );
 }

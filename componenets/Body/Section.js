@@ -1,10 +1,14 @@
 import React from "react";
-import { StyledSection, StyledSectionHeader } from "./SectionStyles";
-export const Section = ({ children, headerName }) => {
+import {
+  StyledSection,
+  StyledSectionHeader,
+  StyledSectionBody,
+} from "./SectionStyles";
+export const Section = ({ children, headerName, sectionId }) => {
   return (
-    <StyledSection>
+    <StyledSection id={sectionId}>
       <StyledSectionHeader>{headerName}</StyledSectionHeader>
-      {children}
+      <StyledSectionBody> {children}</StyledSectionBody>
     </StyledSection>
   );
 };

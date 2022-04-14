@@ -1,8 +1,15 @@
 import styled, { css } from "styled-components";
 
 const StyledSocialLink = styled.a`
+  display: flex;
   height: 40px;
   width: 40px;
+  ${({ small }) =>
+    small &&
+    css`
+      height: 30px;
+      width: 30px;
+    `}
   @media ${({ theme }) => theme.breakPoints.tablet} {
     height: 30px;
     width: 30px;

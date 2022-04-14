@@ -15,7 +15,7 @@ import styled from "../../../public/skills/styled.png";
 import { Wrap } from "./SkillsStyles";
 export const Skills = () => {
   return (
-    <Section id="#skills" headerName={"Skills"}>
+    <Section sectionId={"skills"} headerName={"Skills"}>
       <Wrap>
         <Skill imgSrc={js} skillName="JavaScript" />
         <Skill imgSrc={css} skillName="CSS" />

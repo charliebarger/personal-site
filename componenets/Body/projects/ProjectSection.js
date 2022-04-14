@@ -10,7 +10,7 @@ import Project from "./Project";
 import { StyledSectionWrapper } from "./ProjectSectionStyles";
 export const ProjectSection = () => {
   return (
-    <Section id="#skills" headerName={"Projects"}>
+    <Section sectionId={"projects"} headerName={"Projects"}>
       <StyledSectionWrapper>
         <Project
           siteInfo={

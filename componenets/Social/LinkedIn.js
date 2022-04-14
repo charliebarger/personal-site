@@ -2,12 +2,13 @@ import Link from "next/link";
 import React from "react";
 import SVG from "./SVG";
 import { StyledSocialLink } from "./SocialLinksStyles";
-export const LinkedIn = () => {
+export const LinkedIn = ({ small }) => {
   return (
     <StyledSocialLink
       href="https://www.linkedin.com/in/charlie-barger/"
       target={"_blank"}
       rel="noreferrer"
+      small={small ? true : false}
     >
       <SVG
         fill="#000000"

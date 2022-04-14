@@ -26,8 +26,11 @@ const StyledAboutWrapper = styled.div`
   margin: auto;
 `;
 
-const StyledAboutInfo = styled.p`
+const StyledInfoWrapper = styled.div`
   flex: 1;
+`;
+
+const StyledAboutInfo = styled.p`
   min-width: 300px;
   font-size: 1rem;
   @media ${({ theme }) => theme.breakPoints.laptop} {
@@ -48,6 +51,14 @@ const StyledImageWrapper = styled.div`
   box-shadow: 30px 30px 0 rgb(40 174 176);
 `;
 
+const StyledResumeAnchor = styled.a`
+  color: black;
+  font-family: "Roboto";
+  cursor: pointer;
+  text-underline-offset: 1px;
+  font-weight: 500;
+`;
+
 export {
   StyledH1,
   StyledH2,
@@ -55,4 +66,6 @@ export {
   StyledAboutInfo,
   StyledAboutHeadshotWrapper,
   StyledImageWrapper,
+  StyledResumeAnchor,
+  StyledInfoWrapper,
 };

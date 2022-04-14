@@ -18,6 +18,7 @@ const StyledSocialWrapper = styled.div`
   display: flex;
   margin: 1rem 0;
   gap: 0.4rem;
+  min-height: 250px;
 `;
 
 const PleaseHireMe = styled.span`

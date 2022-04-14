@@ -10,6 +10,7 @@ import About from "../componenets/body/about/AboutSection";
 import Skills from "../componenets/body/skills/SkillsSection";
 import ContactSection from "../componenets/body/contact/ContactSection";
 import ProjectSection from "../componenets/body/projects/ProjectSection";
+import Footer from "../componenets/footer/Footer";
 export default function Home() {
   return (
     <main>
@@ -18,6 +19,7 @@ export default function Home() {
       <Skills />
       <ProjectSection />
       <ContactSection />
+      <Footer />
     </main>
   );
 }

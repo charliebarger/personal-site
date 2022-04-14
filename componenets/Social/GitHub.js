@@ -2,7 +2,6 @@ import React from "react";
 import SVG from "./SVG";
 import { StyledSocialLink } from "./SocialLinksStyles";
 export const GitHub = ({ small }) => {
-  console.log(small);
   return (
     <StyledSocialLink
       href="https://github.com/charliebarger"

@@ -6,7 +6,7 @@ const StyledProjectWrapper = styled.div`
   padding: 1rem;
   background-color: #fff;
   border-radius: 11px;
-  box-shadow: 0 3px 10px grey;
+  box-shadow: 0 3px 10px ${({ theme }) => theme.colors.secondaryFontColor};
   padding: 22px;
   margin: 10px;
 `;
@@ -25,7 +25,7 @@ const StyledProjectPreview = styled.a`
 `;
 
 const StyledHeader = styled.h4`
-  font-family: "Roboto";
+  font-family: ${({ theme }) => theme.fonts.sansSerifPrimary};
   margin: 16px 0;
   font-size: 1.5rem;
 `;
@@ -36,19 +36,27 @@ const StyledImage = styled(Image)`
 
 const ProjectButton = styled.a`
   border-radius: 4px;
-  background: white;
+  background: ${({ color, theme }) =>
+      color === "underlineColor"
+        ? theme.colors.underlineColor
+        : theme.colors.accentColor}
+    solid 2px;
   text-decoration: none;
-  border: ${(props) => props.color} solid 2px;
-  color: black;
+  border: ${({ color, theme }) =>
+      color === "underlineColor"
+        ? theme.colors.underlineColor
+        : theme.colors.accentColor}
+    solid 2px;
+  color: ${({ theme }) => theme.colors.primaryFontColor};
   font-size: 1.15rem;
   padding: 0.5rem 1rem;
   transition: 0.5s;
   cursor: pointer;
-  box-shadow: 0 3px 10px grey;
-  font-family: "Roboto";
+  box-shadow: 0 3px 10px ${({ theme }) => theme.colors.secondaryFontColor};
+  font-family: ${({ theme }) => theme.fonts.sansSerifPrimary};
   position: relative;
   &:after {
-    color: white;
+    color: ${({ theme }) => theme.colors.backgroundColor};
     content: "»";
     position: absolute;
     opacity: 0;
@@ -60,8 +68,11 @@ const ProjectButton = styled.a`
   &:hover {
     padding-right: 24px;
     padding-left: 8px;
-    background-color: ${(props) => props.color};
-    color: white;
+    background-color: ${({ color, theme }) =>
+      color === "underlineColor"
+        ? theme.colors.underlineColor
+        : theme.colors.accentColor};
+    color: ${({ theme }) => theme.colors.backgroundColor};
   }
 
   &:hover:after {

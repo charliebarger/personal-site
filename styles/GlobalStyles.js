@@ -26,7 +26,7 @@ const GlobalStyles = createGlobalStyle`
     padding:1rem 2rem;
   }
 
-  #about {
+  #about, #welcome {
   scroll-margin-top: 50px;
 }
 `;

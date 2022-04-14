@@ -22,7 +22,7 @@ const StyledHamburgerIcon = styled.div`
   div,
   &:after,
   &:before {
-    background: black;
+    background: ${({ theme }) => theme.colors.primaryFontColor};
     content: "";
     display: block;
     height: 2px;
@@ -50,7 +50,7 @@ const StyledHamburgerIcon = styled.div`
         &:after,
         &:before {
           transition: all 0.5s;
-          background: grey;
+          background: ${({ theme }) => theme.colors.secondaryFontColor};
         }
       `}
 

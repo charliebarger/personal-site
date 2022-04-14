@@ -16,17 +16,17 @@ const StyledH1 = styled.h1`
   margin: 0;
   padding: 1rem;
   padding-bottom: 0.5rem;
-  font-family: "Roboto Slab";
+  font-family: ${({ theme }) => theme.fonts.serifPrimary};
   text-align: center;
   font-size: 2rem;
   margin: auto;
   color: transparent;
-  -webkit-text-stroke: 1px black;
+  -webkit-text-stroke: 1px ${({ theme }) => theme.colors.primaryFontColor};
 
   &::before {
     content: "Hello, I'm Charlie";
     position: absolute;
-    color: #28afb0;
+    color: ${({ theme }) => theme.colors.accentColor};
     animation: ${wave} 3s ease-in-out infinite;
   }
   @media ${({ theme }) => theme.breakPoints.mobileLg} {
@@ -41,7 +41,7 @@ const StyledH1 = styled.h1`
 const StyledH2 = styled.h2`
   margin: 0;
   font-weight: 300;
-  font-family: "Roboto";
+  font-family: ${({ theme }) => theme.fonts.sansSerifPrimary};
   text-align: center;
   font-size: 1rem;
   @media ${({ theme }) => theme.breakPoints.mobileLg} {

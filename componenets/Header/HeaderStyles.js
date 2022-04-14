@@ -4,12 +4,12 @@ const StyledHeader = styled.header`
   padding: 22px;
   display: flex;
   align-items: center;
-  border-bottom: 1px solid grey;
-  background: white;
+  border-bottom: 1px solid ${({ theme }) => theme.colors.secondaryFontColor};
+  background: ${({ theme }) => theme.colors.backgroundColor};
   width: 100vw;
   position: sticky;
   top: 0;
-  background: white;
+  background: ${({ theme }) => theme.colors.backgroundColor};
   z-index: 90;
 `;
 

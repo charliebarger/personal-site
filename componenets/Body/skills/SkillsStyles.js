@@ -1,7 +1,7 @@
 import styled, { css } from "styled-components";
 import Image from "next/image";
 const SkillWrapper = styled.div`
-  box-shadow: 6px 6px 10px grey;
+  box-shadow: 6px 6px 10px ${({ theme }) => theme.colors.secondaryFontColor};
   width: 112px;
   justify-content: space-around;
   border-radius: 10px;
@@ -20,7 +20,11 @@ const SkillWrapper = styled.div`
     bottom: 0;
     border-radius: 10px;
     padding: 5px;
-    background: linear-gradient(45deg, #ff4d59, #28aeb0);
+    background: linear-gradient(
+      45deg,
+      ${({ theme }) => theme.colors.underlineColor},
+      ${({ theme }) => theme.colors.accentColor}
+    );
     -webkit-mask: linear-gradient(#fff 0 0) content-box,
       linear-gradient(#fff 0 0);
     -webkit-mask-composite: xor;

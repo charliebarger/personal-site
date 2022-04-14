@@ -4,11 +4,13 @@ const ContactWrapper = styled.div`
   max-width: 450px;
 `;
 
-const StyledContactP = styled.p``;
+const StyledContactP = styled.p`
+  color: ${({ theme }) => theme.colors.primaryFontColor};
+`;
 
 const StyedEmailAdress = styled.a`
-  color: black;
-  font-family: "Roboto";
+  color: ${({ theme }) => theme.colors.primaryFontColor};
+  font-family: ${({ theme }) => theme.fonts.sansSerifPrimary};
   cursor: pointer;
   text-underline-offset: 1px;
   font-weight: 500;

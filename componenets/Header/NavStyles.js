@@ -22,8 +22,8 @@ const StyledNav = styled.nav`
   align-items: center;
   justify-content: center;
   position: absolute;
-  color: white;
-  background: white;
+  color: ${({ theme }) => theme.colors.backgroundColor};
+  background: ${({ theme }) => theme.colors.backgroundColor};
   z-index: 1;
   ${({ closed }) =>
     !closed &&
@@ -58,8 +58,8 @@ const StyledNav = styled.nav`
     width: auto;
     display: flex;
     align-items: center;
-    background: white;
-    color: white;
+    background: ${({ theme }) => theme.colors.backgroundColor};
+    color: ${({ theme }) => theme.colors.backgroundColor};
     margin-left: auto;
     && li {
       animation: none;
@@ -103,7 +103,7 @@ const StyledNavItemWrapper = styled.ul`
 `;
 
 const StyledNavItem = styled.li`
-  color: grey;
+  color: ${({ theme }) => theme.colors.secondaryFontColor};
   position: relative;
   opacity: 0;
   &:after {
@@ -113,27 +113,27 @@ const StyledNavItem = styled.li`
     margin: 5px auto;
   }
   &:hover {
-    color: black;
+    color: ${({ theme }) => theme.colors.primaryFontColor};
     &:after {
       content: "";
       display: block;
       height: 1px;
       margin: 5px auto;
-      background: red;
+      background: ${({ theme }) => theme.colors.underlineColor};
       animation: 0.25s ${grow} ease-in-out forwards;
     }
   }
   @media ${({ theme }) => theme.breakPoints.tablet} {
     transition: none;
     opacity: 1;
-    color: black;
+    color: ${({ theme }) => theme.colors.primaryFontColor};
     top: 2px;
     &:after {
       margin: 0 auto;
       margin-top: 3px;
     }
     &:hover {
-      color: black;
+      color: ${({ theme }) => theme.colors.primaryFontColor};
       &:after {
         margin: 0 auto;
         margin-top: 3px;
@@ -146,10 +146,10 @@ const StyledNavItem = styled.li`
       css`
         &:after {
           width: 80%;
-          background: red;
+          background: ${({ theme }) => theme.colors.underlineColor};
         }
         &:hover {
-          color: black;
+          color: ${({ theme }) => theme.colors.primaryFontColor};
           &:after {
             width: 80%;
           }
@@ -161,15 +161,15 @@ const StyledNavItem = styled.li`
 const StyledLink = styled.a`
   border: none;
   text-decoration: none;
-  color: grey;
+  color: ${({ theme }) => theme.colors.secondaryFontColor};
   &:hover {
-    color: black;
+    color: ${({ theme }) => theme.colors.primaryFontColor};
   }
   @media ${({ theme }) => theme.breakPoints.tablet} {
     ${({ active }) =>
       active &&
       css`
-        color: black;
+        color: ${({ theme }) => theme.colors.primaryFontColor};
       `}
   }
 `;

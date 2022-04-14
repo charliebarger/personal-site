@@ -1,8 +1,8 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import { StyledContent, StyledH1, StyledH2 } from "./WecomeStyles";
 export const Welcome = () => {
   return (
-    <section>
+    <section id="welcome">
       <StyledContent>
         <StyledH1>Hello, I'm Charlie</StyledH1>
       </StyledContent>

@@ -5,7 +5,7 @@ const StyledH1 = styled.h1`
   margin: 0;
   padding: 1rem;
   padding-bottom: 0.5rem;
-  font-family: "Roboto Slab";
+  font-family: ${({ theme }) => theme.fonts.serifPrimary};
   text-align: center;
   font-size: 3rem;
   margin: auto;
@@ -14,7 +14,7 @@ const StyledH1 = styled.h1`
 const StyledH2 = styled.h2`
   margin: 0;
   font-weight: 300;
-  font-family: "Roboto";
+  font-family: ${({ theme }) => theme.fonts.sansSerifPrimary};
   text-align: center;
   font-size: 1rem;
 `;
@@ -33,6 +33,7 @@ const StyledInfoWrapper = styled.div`
 const StyledAboutInfo = styled.p`
   min-width: 300px;
   font-size: 1rem;
+  color: ${({ theme }) => theme.colors.secondaryFontColor};
   @media ${({ theme }) => theme.breakPoints.laptop} {
     font-size: 1.15rem;
   }
@@ -48,12 +49,12 @@ const StyledImageWrapper = styled.div`
   max-width: 350px;
   margin: auto;
   display: flex;
-  box-shadow: 30px 30px 0 rgb(40 174 176);
+  box-shadow: 30px 30px 0 ${({ theme }) => theme.colors.accentColor};
 `;
 
 const StyledResumeAnchor = styled.a`
-  color: black;
-  font-family: "Roboto";
+  color: ${({ theme }) => theme.colors.primaryFontColor};
+  font-family: ${({ theme }) => theme.fonts.sansSerifPrimary};
   cursor: pointer;
   text-underline-offset: 1px;
   font-weight: 500;

@@ -18,10 +18,10 @@ export const Project = ({ siteLink, repoLink, imgSrc, siteName, siteInfo }) => {
       <StyledHeader>{siteName}</StyledHeader>
       <StyledSiteInfo>{siteInfo}</StyledSiteInfo>
       <ButtonWrapper>
-        <ProjectButton color={"#28afb0"} href={siteLink} target="_blank">
+        <ProjectButton color={"underlineColor"} href={siteLink} target="_blank">
           Live App
         </ProjectButton>
-        <ProjectButton color={"#ff4d59"} href={repoLink} target="_blank">
+        <ProjectButton color={"accentColor"} href={repoLink} target="_blank">
           Learn More
         </ProjectButton>
       </ButtonWrapper>

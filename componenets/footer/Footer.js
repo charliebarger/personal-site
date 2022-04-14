@@ -3,7 +3,7 @@ import { StyledFooter, StyledCopy, StyledArrowWrapper } from "./FooterStyles";
 export const Footer = () => {
   return (
     <StyledFooter>
-      <StyledArrowWrapper href="#about">
+      <StyledArrowWrapper href="#top">
         <svg
           version="1.1"
           xmlns="http://www.w3.org/2000/svg"

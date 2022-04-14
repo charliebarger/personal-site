@@ -17,7 +17,7 @@ const StyledSocialLink = styled.a`
 `;
 
 const StlyedSocialLogo = styled.svg`
-  fill: black;
+  fill: ${({ theme }) => theme.colors.primaryFontColor};
   height: 100%;
   width: 100%;
   &:hover {

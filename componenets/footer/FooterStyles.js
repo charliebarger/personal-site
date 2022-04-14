@@ -8,7 +8,7 @@ const StyledFooter = styled.footer`
 `;
 
 const StyledCopy = styled.small`
-  font-family: "Roboto";
+  font-family: ${({ theme }) => theme.fonts.sansSerifPrimary};
   font-weight: 300;
   text-transform: uppercase;
 `;
@@ -26,11 +26,11 @@ const oscillate = keyframes`
 const StyledArrowWrapper = styled.a`
   width: 30px;
   margin: 1rem;
-  fill: grey;
+  fill: ${({ theme }) => theme.colors.secondaryFontColor};
   animation: ${oscillate} 1s linear infinite;
 
   &:hover {
-    fill: black;
+    fill: ${({ theme }) => theme.colors.primaryFontColor};
   }
 `;
 

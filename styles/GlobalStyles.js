@@ -15,7 +15,7 @@ const GlobalStyles = createGlobalStyle`
   body{
     padding:0;
     margin:0;
-    position:${({ closed }) => (!closed ? "relative" : "fixed")};;
+    position:${({ closed }) => (!closed ? "relative" : "fixed")};
     min-height:100vh;
     max-width: 100%;
     overflow-x: hidden;

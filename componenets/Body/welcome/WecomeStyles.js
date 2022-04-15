@@ -14,7 +14,6 @@ const wave = keyframes`
 const StyledH1 = styled.h1`
   font-weight: 500;
   margin: 0;
-  padding: 1rem;
   padding-bottom: 0.5rem;
   font-family: ${({ theme }) => theme.fonts.serifPrimary};
   text-align: center;
@@ -58,4 +57,8 @@ const StyledContent = styled.div`
   display: flex;
 `;
 
-export { StyledContent, StyledH1, StyledH2 };
+const StyledWelcomeSection = styled.div`
+  margin: 1rem 0;
+`;
+
+export { StyledContent, StyledH1, StyledH2, StyledWelcomeSection };

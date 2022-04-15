@@ -39,7 +39,6 @@ const SkillWrapper = styled.div`
 const Wrap = styled.div`
   max-width: 855px;
   margin: auto;
-  padding: 2rem 0;
   display: flex;
   flex-wrap: wrap;
   gap: 16px;

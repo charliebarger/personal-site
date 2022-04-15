@@ -22,7 +22,7 @@ const StyledH2 = styled.h2`
 const StyledAboutWrapper = styled.div`
   display: flex;
   flex-wrap: wrap;
-  gap: 1rem;
+  gap: 2rem;
   margin: auto;
 `;
 
@@ -31,6 +31,8 @@ const StyledInfoWrapper = styled.div`
 `;
 
 const StyledAboutInfo = styled.p`
+  margin-top: 0;
+  margin-bottom: 1rem;
   min-width: 300px;
   font-size: 1rem;
   color: ${({ theme }) => theme.colors.secondaryFontColor};
@@ -48,6 +50,7 @@ const StyledImageWrapper = styled.div`
   width: 75%;
   max-width: 350px;
   margin: auto;
+  margin-bottom: 30px;
   display: flex;
   box-shadow: 30px 30px 0 ${({ theme }) => theme.colors.accentColor};
 `;
@@ -57,7 +60,7 @@ const StyledResumeAnchor = styled.a`
   font-family: ${({ theme }) => theme.fonts.sansSerifPrimary};
   cursor: pointer;
   text-underline-offset: 1px;
-  font-weight: 500;
+  font-weight: 600;
 `;
 
 export {

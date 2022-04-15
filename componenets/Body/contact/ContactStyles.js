@@ -2,9 +2,11 @@ import styled, { css } from "styled-components";
 
 const ContactWrapper = styled.div`
   max-width: 450px;
+  min-height: calc(100vh - 350px);
 `;
 
 const StyledContactP = styled.p`
+  margin-top: 0;
   color: ${({ theme }) => theme.colors.primaryFontColor};
 `;
 
@@ -20,7 +22,6 @@ const StyledSocialWrapper = styled.div`
   display: flex;
   margin: 1rem 0;
   gap: 0.4rem;
-  min-height: 250px;
 `;
 
 const PleaseHireMe = styled.span`

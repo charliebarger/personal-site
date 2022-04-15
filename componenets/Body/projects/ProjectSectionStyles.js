@@ -8,7 +8,6 @@ const StyledProjectWrapper = styled.div`
   border-radius: 11px;
   box-shadow: 0 3px 10px ${({ theme }) => theme.colors.secondaryFontColor};
   padding: 22px;
-  margin: 10px;
 `;
 
 const StyledProjectPreview = styled.a`
@@ -81,10 +80,11 @@ const ProjectButton = styled.a`
   }
 `;
 
-const StyledSiteInfo = styled.p``;
+const StyledSiteInfo = styled.p`
+  color: ${({ theme }) => theme.colors.secondaryFontColor};
+`;
 
 const ButtonWrapper = styled.div`
-  margin-top: 1.5rem;
   display: flex;
   justify-content: center;
   gap: 2rem;
@@ -94,7 +94,7 @@ const StyledSectionWrapper = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 1rem;
+  gap: 2rem;
 `;
 
 export {

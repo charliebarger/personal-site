@@ -19,11 +19,15 @@ const GlobalStyles = createGlobalStyle`
     min-height:100vh;
     max-width: 100%;
     overflow-x: hidden;
+  }
 
+  p{
+    font-weight:300;
+    line-height:initial;
   }
 
   main{
-    padding:1rem 2rem;
+    padding:1rem 1.5rem;
   }
 
   #about, #welcome {

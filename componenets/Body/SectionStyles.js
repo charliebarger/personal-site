@@ -1,7 +1,7 @@
 import styled, { css } from "styled-components";
 
 const StyledSection = styled.section`
-  padding: 2.5rem 1.5rem;
+  // padding: 2.5rem 1.5rem;
   max-width: 955px;
   margin: auto;
 `;
@@ -33,7 +33,7 @@ const StyledSectionHeader = styled.h3`
 `;
 
 const StyledSectionBody = styled.div`
-  padding: 1rem 0;
+  padding: 1.5rem 0 3rem 0;
 `;
 
 export { StyledSectionHeader, StyledSection, StyledSectionBody };

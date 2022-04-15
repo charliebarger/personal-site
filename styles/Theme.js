@@ -9,7 +9,7 @@ const theme = {
   breakPoints: {
     mobileSm: minWidth(420),
     mobileLg: minWidth(500),
-    tablet: minWidth(768),
+    tablet: minWidth(778),
     laptop: minWidth(1024),
     desktop: minWidth(1200),
   },

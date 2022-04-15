@@ -28,6 +28,12 @@ const GlobalStyles = createGlobalStyle`
 
   main{
     padding:1rem 1.5rem;
+    @media ${({ theme }) => theme.breakPoints.mobileLg} {
+      padding:1rem 2rem;
+    }
+    @media ${({ theme }) => theme.breakPoints.tablet} {
+      padding:1rem 3rem;
+    }
   }
 
   #about, #welcome {

@@ -17,7 +17,7 @@ const StyledSectionHeader = styled.h3`
     height: 0.75rem;
     display: block;
     background: ${({ theme }) => theme.colors.underlineColor};
-    left: 20%;
+    left: 1rem;
     top: 2rem;
     position: relative;
     z-index: -1;

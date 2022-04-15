@@ -8,6 +8,12 @@ const StyledProjectWrapper = styled.div`
   border-radius: 11px;
   box-shadow: 0 3px 10px ${({ theme }) => theme.colors.secondaryFontColor};
   padding: 22px;
+  @media ${({ theme }) => theme.breakPoints.tablet} {
+    width: 325px;
+  }
+  @media ${({ theme }) => theme.breakPoints.laptop} {
+    width: 375px;
+  }
 `;
 
 const StyledProjectPreview = styled.a`

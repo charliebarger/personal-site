@@ -15,7 +15,7 @@ export const Project = ({ siteLink, repoLink, imgSrc, siteName, siteInfo }) => {
       <StyledProjectPreview
         href={siteLink}
         target="_blank"
-        aria-label={`${siteLink}`}
+        aria-label={`${siteName}`}
       >
         <StyledImage alt="" src={imgSrc}></StyledImage>
       </StyledProjectPreview>

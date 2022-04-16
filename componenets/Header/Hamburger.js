@@ -5,7 +5,12 @@ const Hamburger = () => {
   const { closed, setClosed } = useContext(NavContext);
   return (
     <StyledHamburgerWrapper>
-      <StyledHamburgerIcon closed={closed} onClick={() => setClosed(!closed)}>
+      <StyledHamburgerIcon
+        aria-label="Open Nav"
+        role="button"
+        closed={closed}
+        onClick={() => setClosed(!closed)}
+      >
         <div />
       </StyledHamburgerIcon>
     </StyledHamburgerWrapper>

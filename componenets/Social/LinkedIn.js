@@ -5,6 +5,7 @@ import { StyledSocialLink } from "./SocialLinksStyles";
 export const LinkedIn = ({ small }) => {
   return (
     <StyledSocialLink
+      aria-label="LinkedIn"
       href="https://www.linkedin.com/in/charlie-barger/"
       target={"_blank"}
       rel="noreferrer"

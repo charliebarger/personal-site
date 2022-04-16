@@ -3,7 +3,7 @@ import SVG from "./SVG";
 import { StyledSocialLink } from "./SocialLinksStyles";
 export const Email = () => {
   return (
-    <StyledSocialLink href="mailto: me@charliebarger.dev">
+    <StyledSocialLink href="mailto: me@charliebarger.dev" aria-label="Email">
       <SVG
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 24 24"

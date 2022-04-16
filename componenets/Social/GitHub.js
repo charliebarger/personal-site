@@ -7,6 +7,7 @@ export const GitHub = ({ small }) => {
       href="https://github.com/charliebarger"
       target={"_blank"}
       rel="noreferrer"
+      aria-label="GitHub"
       small={small ? true : false}
     >
       <SVG xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30">

@@ -12,7 +12,11 @@ import {
 export const Project = ({ siteLink, repoLink, imgSrc, siteName, siteInfo }) => {
   return (
     <StyledProjectWrapper>
-      <StyledProjectPreview href={siteLink} target="_blank">
+      <StyledProjectPreview
+        href={siteLink}
+        target="_blank"
+        aria-label={`${siteLink}`}
+      >
         <StyledImage alt="" src={imgSrc}></StyledImage>
       </StyledProjectPreview>
       <StyledHeader>{siteName}</StyledHeader>

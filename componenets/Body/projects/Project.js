@@ -22,10 +22,20 @@ export const Project = ({ siteLink, repoLink, imgSrc, siteName, siteInfo }) => {
       <StyledHeader>{siteName}</StyledHeader>
       <StyledSiteInfo>{siteInfo}</StyledSiteInfo>
       <ButtonWrapper>
-        <ProjectButton color={"underlineColor"} href={siteLink} target="_blank">
+        <ProjectButton
+          color={"underlineColor"}
+          href={siteLink}
+          target="_blank"
+          aria-label={`${siteName} Live App`}
+        >
           Live App
         </ProjectButton>
-        <ProjectButton color={"accentColor"} href={repoLink} target="_blank">
+        <ProjectButton
+          color={"accentColor"}
+          href={repoLink}
+          target="_blank"
+          aria-label={`${siteName} Github Repo`}
+        >
           Learn More
         </ProjectButton>
       </ButtonWrapper>

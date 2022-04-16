@@ -1,6 +1,6 @@
 import styled, { css } from "styled-components";
 import Image from "next/image";
-const SkillWrapper = styled.div`
+const StyledSkillWrapper = styled.li`
   box-shadow: 6px 6px 10px ${({ theme }) => theme.colors.secondaryFontColor};
   width: 112px;
   justify-content: space-around;
@@ -36,7 +36,7 @@ const SkillWrapper = styled.div`
   }
 `;
 
-const Wrap = styled.div`
+const StyledFlexWrapper = styled.ul`
   max-width: 855px;
   margin: auto;
   display: flex;
@@ -45,7 +45,7 @@ const Wrap = styled.div`
   justify-content: center;
 `;
 
-const ImageWrapper = styled.div`
+const StyledImageWrapper = styled.div`
   height: 60px;
   width: 60px;
   display: flex;
@@ -59,8 +59,14 @@ const StyledImage = styled(Image)`
   object-fit: contain;
 `;
 
-const TechName = styled.span`
+const StyledTechName = styled.span`
   text-align: center;
 `;
 
-export { SkillWrapper, Wrap, ImageWrapper, TechName, StyledImage };
+export {
+  StyledSkillWrapper,
+  StyledFlexWrapper,
+  StyledImageWrapper,
+  StyledTechName,
+  StyledImage,
+};

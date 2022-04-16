@@ -1,22 +1,22 @@
 import React from "react";
 import Image from "next/image";
 import {
-  SkillWrapper,
+  StyledSkillWrapper,
   Wrap,
-  ImageWrapper,
-  TechName,
+  StyledImageWrapper,
+  StyledTechName,
   StyledImage,
 } from "./SkillsStyles";
 import js from "../../../public/skills/javascript.png";
 export const Skill = ({ imgSrc, skillName }) => {
   console.log(imgSrc);
   return (
-    <SkillWrapper>
-      <ImageWrapper>
+    <StyledSkillWrapper>
+      <StyledImageWrapper>
         <StyledImage src={imgSrc} alt="" />
-      </ImageWrapper>
-      <TechName>{skillName}</TechName>
-    </SkillWrapper>
+      </StyledImageWrapper>
+      <StyledTechName>{skillName}</StyledTechName>
+    </StyledSkillWrapper>
   );
 };
 

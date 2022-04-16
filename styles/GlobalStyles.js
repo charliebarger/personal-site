@@ -26,13 +26,17 @@ const GlobalStyles = createGlobalStyle`
     line-height:initial;
   }
 
+  li{
+    list-style:none;
+  }
+
   main{
-    padding:1rem 1.5rem;
+    padding:1rem 1.5rem 0 1.5rem;
     @media ${({ theme }) => theme.breakPoints.mobileLg} {
-      padding:1rem 2rem;
+      padding:1rem 2rem 0 2rem;
     }
     @media ${({ theme }) => theme.breakPoints.tablet} {
-      padding:1rem 3rem;
+      padding:1rem 3rem 0 3rem;
     }
   }
 

@@ -4,7 +4,7 @@ const StyledFooter = styled.footer`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 2rem 0;
+  margin: 2rem 0 3rem 0;
 `;
 
 const StyledCopy = styled.small`

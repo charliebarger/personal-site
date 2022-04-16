@@ -1,7 +1,7 @@
 import styled, { css } from "styled-components";
 import Image from "next/image";
 
-const StyledProjectWrapper = styled.div`
+const StyledProjectWrapper = styled.li`
   width: 375px;
   padding: 1rem;
   background-color: #fff;
@@ -96,11 +96,12 @@ const ButtonWrapper = styled.div`
   gap: 2rem;
 `;
 
-const StyledSectionWrapper = styled.div`
+const StyledFlexWrapper = styled.ul`
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 2rem;
+  margin: 0;
 `;
 
 export {
@@ -111,5 +112,5 @@ export {
   ProjectButton,
   StyledSiteInfo,
   ButtonWrapper,
-  StyledSectionWrapper,
+  StyledFlexWrapper,
 };

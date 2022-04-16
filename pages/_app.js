@@ -4,6 +4,7 @@ import Header from "../componenets/Header/Header";
 import GlobalStyles from "../styles/GlobalStyles";
 import { NavContext } from "../utils/NavContext";
 import Theme from "../styles/theme";
+import Footer from "../componenets/footer/Footer";
 function MyApp({ Component, pageProps }) {
   const [closed, setClosed] = useState(false);
   return (
@@ -15,6 +16,7 @@ function MyApp({ Component, pageProps }) {
           <div id="top" />
           <Header />
           <Component {...pageProps} />
+          <Footer />
         </NavContext.Provider>
       </div>
     </Theme>

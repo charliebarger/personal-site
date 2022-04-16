@@ -7,11 +7,11 @@ import memberImg from "../../../public/projects/members.png";
 import southParkImg from "../../../public/projects/south-park.png";
 import toDoImg from "../../../public/projects/to-do.png";
 import Project from "./Project";
-import { StyledSectionWrapper } from "./ProjectSectionStyles";
+import { StyledFlexWrapper } from "./ProjectSectionStyles";
 export const ProjectSection = () => {
   return (
     <Section sectionId={"projects"} headerName={"Projects"}>
-      <StyledSectionWrapper>
+      <StyledFlexWrapper>
         <Project
           siteInfo={
             "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s."
@@ -66,7 +66,7 @@ export const ProjectSection = () => {
           siteName={"To Do List"}
           imgSrc={toDoImg}
         />
-      </StyledSectionWrapper>
+      </StyledFlexWrapper>
     </Section>
   );
 };

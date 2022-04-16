@@ -57,7 +57,7 @@ const StyledContent = styled.div`
   display: flex;
 `;
 
-const StyledWelcomeSection = styled.div`
+const StyledWelcomeSection = styled.section`
   margin: 1rem 0;
 `;
 

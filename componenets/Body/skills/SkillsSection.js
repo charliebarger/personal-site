@@ -12,11 +12,11 @@ import express from "../../../public/skills/express.png";
 import mongoDb from "../../../public/skills/mongoDb.png";
 import next from "../../../public/skills/next.png";
 import styled from "../../../public/skills/styled.png";
-import { Wrap } from "./SkillsStyles";
+import { StyledFlexWrapper } from "./SkillsStyles";
 export const Skills = () => {
   return (
     <Section sectionId={"skills"} headerName={"Skills"}>
-      <Wrap>
+      <StyledFlexWrapper>
         <Skill imgSrc={js} skillName="JavaScript" />
         <Skill imgSrc={css} skillName="CSS" />
         <Skill imgSrc={html} skillName="HTML" />
@@ -26,7 +26,7 @@ export const Skills = () => {
         <Skill imgSrc={bootstrap} skillName="Bootstrap" />
         <Skill imgSrc={express} skillName="Express" />
         <Skill imgSrc={mongoDb} skillName="MongoDB" />
-      </Wrap>
+      </StyledFlexWrapper>
     </Section>
   );
 };

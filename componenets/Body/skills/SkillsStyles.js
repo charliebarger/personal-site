@@ -1,4 +1,4 @@
-import styled, { css } from "styled-components";
+import styled from "styled-components";
 import Image from "next/image";
 const StyledSkillWrapper = styled.li`
   box-shadow: 6px 6px 10px ${({ theme }) => theme.colors.secondaryFontColor};

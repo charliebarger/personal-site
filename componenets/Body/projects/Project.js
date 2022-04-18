@@ -27,6 +27,7 @@ export const Project = ({ siteLink, repoLink, imgSrc, siteName, siteInfo }) => {
           href={siteLink}
           target="_blank"
           aria-label={`${siteName} Live App`}
+          role="link"
         >
           Live App
         </ProjectButton>
@@ -34,7 +35,8 @@ export const Project = ({ siteLink, repoLink, imgSrc, siteName, siteInfo }) => {
           color={"accentColor"}
           href={repoLink}
           target="_blank"
-          aria-label={`${siteName} Github Repo`}
+          aria-label={`${siteName} Github Repository`}
+          role="link"
         >
           Learn More
         </ProjectButton>

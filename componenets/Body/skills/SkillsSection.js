@@ -10,8 +10,6 @@ import git from "../../../public/skills/git.png";
 import bootstrap from "../../../public/skills/bootstrap.png";
 import express from "../../../public/skills/express.png";
 import mongoDb from "../../../public/skills/mongoDb.png";
-import next from "../../../public/skills/next.png";
-import styled from "../../../public/skills/styled.png";
 import { StyledFlexWrapper } from "./SkillsStyles";
 export const Skills = () => {
   return (

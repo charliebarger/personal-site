@@ -40,8 +40,8 @@ const GlobalStyles = createGlobalStyle`
     }
   }
 
-  #about, #welcome {
-  scroll-margin-top: 50px;
+  #about, #welcome, #skills, #projects, #contact {
+  scroll-margin-top: 75px;
 }
 `;
 

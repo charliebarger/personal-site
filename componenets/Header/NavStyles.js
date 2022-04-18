@@ -137,24 +137,8 @@ const StyledNavItem = styled.li`
       &:after {
         margin: 0 auto;
         margin-top: 3px;
-        width: 0;
-        animation: none;
       }
     }
-    ${({ active }) =>
-      active &&
-      css`
-        &:after {
-          width: 80%;
-          background: ${({ theme }) => theme.colors.underlineColor};
-        }
-        &:hover {
-          color: ${({ theme }) => theme.colors.primaryFontColor};
-          &:after {
-            width: 80%;
-          }
-        }
-      `}
   }
 `;
 
@@ -164,13 +148,6 @@ const StyledLink = styled.a`
   color: ${({ theme }) => theme.colors.secondaryFontColor};
   &:hover {
     color: ${({ theme }) => theme.colors.primaryFontColor};
-  }
-  @media ${({ theme }) => theme.breakPoints.tablet} {
-    ${({ active }) =>
-      active &&
-      css`
-        color: ${({ theme }) => theme.colors.primaryFontColor};
-      `}
   }
 `;
 

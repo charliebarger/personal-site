@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import headshot from "../../../public/headshot.png";
+import headshot from "../../../public/headshot.jpg";
 import Section from "../Section";
 import {
   StyledAboutInfo,

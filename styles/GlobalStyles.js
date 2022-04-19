@@ -7,6 +7,7 @@ const GlobalStyles = createGlobalStyle`
     box-sizing: border-box;
     font-family:${({ theme }) => theme.fonts.serifPrimary};
     max-width: 100%;
+    padding-top:75px;
   }
   *, *:before, *:after {
     box-sizing: inherit;

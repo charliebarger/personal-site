@@ -7,7 +7,7 @@ const StyledHeader = styled.header`
   border-bottom: 1px solid ${({ theme }) => theme.colors.secondaryFontColor};
   background: ${({ theme }) => theme.colors.backgroundColor};
   width: 100vw;
-  position: sticky;
+  position: fixed;
   top: 0;
   background: ${({ theme }) => theme.colors.backgroundColor};
   z-index: 90;

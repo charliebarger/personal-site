@@ -18,7 +18,7 @@ function MyApp({ Component, pageProps }) {
         ></meta>
         <meta name="description" content="need to fill content"></meta>
       </Head>
-      <div style={{ contain: "paint", position: "relative" }}>
+      <div style={{ overflowX: "hidden", position: "relative" }}>
         <NavContext.Provider value={{ closed, setClosed }}>
           <GlobalStyles closed={closed} />
           <Normalize />

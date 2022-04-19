@@ -11,7 +11,7 @@ function MyApp({ Component, pageProps }) {
   return (
     <Theme>
       <Head>
-        <title>Charles Barger | Full Stack Web Developer</title>
+        <title>Charlie Barger | Full Stack Web Developer</title>
         <meta
           name="viewport"
           content="width=device-width, initial-scale=1"
@@ -22,7 +22,7 @@ function MyApp({ Component, pageProps }) {
         <NavContext.Provider value={{ closed, setClosed }}>
           <GlobalStyles closed={closed} />
           <Normalize />
-          <div id="top" />
+          <div id="top" style={{ paddingBottom: "75px" }} />
           <Header />
           <Component {...pageProps} />
           <Footer />

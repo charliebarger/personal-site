@@ -8,6 +8,7 @@ const GlobalStyles = createGlobalStyle`
     font-family:${({ theme }) => theme.fonts.serifPrimary};
     overflow-x: hidden;
     max-width: 100%;
+    contain:paint;
   }
   *, *:before, *:after {
     box-sizing: inherit;
@@ -20,7 +21,6 @@ const GlobalStyles = createGlobalStyle`
     overflow:${({ closed }) => (!closed ? "" : "hidden")};
     min-height:100vh;
     max-width: 100%;
-    overflow-x: hidden;
     max-width: 100%;
   }
 
@@ -46,6 +46,10 @@ const GlobalStyles = createGlobalStyle`
       padding:1rem 3rem 0 3rem;
     }
   }
+
+  #about, #welcome, #skills, #projects, #contact {
+  scroll-margin-top: 75px;
+}
 `;
 
 export default GlobalStyles;

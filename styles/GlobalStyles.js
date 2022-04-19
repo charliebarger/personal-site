@@ -6,6 +6,8 @@ const GlobalStyles = createGlobalStyle`
     font-size:16px;
     box-sizing: border-box;
     font-family:${({ theme }) => theme.fonts.serifPrimary};
+    overflow-x: hidden;
+    max-width: 100%;
   }
   *, *:before, *:after {
     box-sizing: inherit;
@@ -17,6 +19,8 @@ const GlobalStyles = createGlobalStyle`
     margin:0;
     overflow:${({ closed }) => (!closed ? "" : "hidden")};
     min-height:100vh;
+    max-width: 100%;
+    overflow-x: hidden;
     max-width: 100%;
   }
 

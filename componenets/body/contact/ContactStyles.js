@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 const ContactWrapper = styled.div`
   max-width: 450px;
-  min-height: calc(100vh - 350px);
+  min-height: calc(100vh - 275px);
 `;
 
 const StyledContactP = styled.p`

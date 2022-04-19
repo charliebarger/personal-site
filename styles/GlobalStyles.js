@@ -29,6 +29,10 @@ const GlobalStyles = createGlobalStyle`
     line-height:initial;
   }
 
+  ul{
+    padding:0;
+  }
+
   li{
     list-style:none;
   }
@@ -42,10 +46,6 @@ const GlobalStyles = createGlobalStyle`
       padding:1rem 3rem 0 3rem;
     }
   }
-
-  #about, #welcome, #skills, #projects, #contact {
-  scroll-margin-top: 75px;
-}
 `;
 
 export default GlobalStyles;

@@ -21,8 +21,8 @@ export const ContactSection = () => {
           something together, or just want to connect? Don’t hesitate to reach
           out and i’ll get back to you shortly.
         </StyledContactP>
-        <StyedEmailAdress href="mailto: me@charliebarger.dev">
-          me@charliebarger.dev
+        <StyedEmailAdress href="mailto: charliebarger96@gmail.com">
+          charliebarger96@gmail.com
         </StyedEmailAdress>
         <StyledSocialWrapper>
           <GitHub small />

@@ -16,7 +16,10 @@ function MyApp({ Component, pageProps }) {
           name="viewport"
           content="width=device-width, initial-scale=1"
         ></meta>
-        <meta name="description" content="need to fill content"></meta>
+        <meta
+          name="description"
+          content="Full stack web developer with an eye for detail and a background in the visual arts. Well-versed in both back end and front end development with the ability to quickly learn new technologies as they arise."
+        ></meta>
       </Head>
       <div style={{ overflowX: "hidden", position: "relative" }}>
         <NavContext.Provider value={{ closed, setClosed }}>

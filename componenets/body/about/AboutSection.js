@@ -16,15 +16,20 @@ export const About = () => {
       <StyledAboutWrapper>
         <StyledInfoWrapper>
           <StyledAboutInfo>
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industrys standard dummy text
-            ever since the 1500s, when an unknown printer took a galley of type
-            and scrambled it to make a type specimen book. It has survived not
-            only five centuries, but also the leap into electronic typesetting,
-            remaining essentially unchanged. It was popularised in the 1960s
-            with the release of Letraset sheets containing Lorem Ipsum passages,
-            and more recently with desktop publishing software like Aldus
-            PageMaker including versions of Lorem Ipsum.
+            I am a full stack web developer and kids coding instructor based in
+            Denver, CO!
+          </StyledAboutInfo>
+          <StyledAboutInfo>
+            With an eye for detail and a background in the visual arts, I aim to
+            create eloquent, responsive, and accessible websites that provide an
+            exceptional user experience.
+          </StyledAboutInfo>
+          <StyledAboutInfo>
+            As a maker, the process of creating drives me. My interest in web
+            development started in the making, but I discovered later that my
+            passion for learning was even more significant. A seemingly
+            never-ending amount of new things to learn keeps me excited and
+            curious about all things web development!
           </StyledAboutInfo>
           <StyledResumeAnchor
             downlaod

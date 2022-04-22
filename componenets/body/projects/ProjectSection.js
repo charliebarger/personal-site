@@ -14,16 +14,16 @@ export const ProjectSection = () => {
       <StyledFlexWrapper>
         <Project
           siteInfo={
-            "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s."
+            "Blog site that allows users to create articles, save drafts, and read and comment on published articles. Built with React, Express, MongoDB, and Node."
           }
-          repoLink={"https://github.com/charliebarger/Dev-Spot-Client1"}
-          siteLink={"https://charliebarger.github.io/Dev-Spot-Client1/"}
+          repoLink={"https://github.com/charliebarger/dev-spot-client"}
+          siteLink={"https://charliebarger.github.io/dev-spot-client/"}
           siteName={"Dev Spot"}
           imgSrc={devImg}
         />
         <Project
           siteInfo={
-            "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s."
+            "Photo-tagging game, where a stopwatch times the user as they attempt to locate all of the required characters. Built with React and Firebase. "
           }
           repoLink={"https://github.com/charliebarger/where-is-waldo"}
           siteLink={"https://where-s-waldo-8496c.web.app/#/"}
@@ -32,16 +32,16 @@ export const ProjectSection = () => {
         />
         <Project
           siteInfo={
-            "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s."
+            "Message board that changes from a hardware store into an exclusive online speakeasy after the user logs in. Made with Express, MongoDB, Node, and EJS."
           }
-          repoLink={"https://github.com/charliebarger/members-only"}
+          repoLink={"https://github.com/charliebarger/speakeasy"}
           siteLink={"https://morning-thicket-24228.herokuapp.com/"}
-          siteName={"Members Only"}
+          siteName={"The Speakeasy"}
           imgSrc={memberImg}
         />
         <Project
           siteInfo={
-            "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s."
+            "Memory game where a user tries to remember to only select characters that they have not selected before. Made with React."
           }
           repoLink={"https://github.com/charliebarger/memory-game"}
           siteLink={"https://charliebarger.github.io/memory-game/"}
@@ -50,7 +50,7 @@ export const ProjectSection = () => {
         />
         <Project
           siteInfo={
-            "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s."
+            "Faux E-Commerce site that showcases inventory and has full shopping cart capabilities. Made with React and React Router."
           }
           repoLink={"https://github.com/charliebarger/mini-cactus-shop"}
           siteLink={"https://charliebarger.github.io/mini-cactus-shop/#/"}
@@ -59,7 +59,7 @@ export const ProjectSection = () => {
         />
         <Project
           siteInfo={
-            "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s."
+            "Productivity app with different folders that contain to-do lists. User Data is stored in local storage. Made with JavaScript, HTML, and CSS"
           }
           repoLink={"https://github.com/charliebarger/To-Do-List"}
           siteLink={"https://charliebarger.github.io/To-Do-List/"}

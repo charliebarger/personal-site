@@ -37,7 +37,7 @@ const StyledAboutInfo = styled.p`
   font-size: 1rem;
   color: ${({ theme }) => theme.colors.secondaryFontColor};
   @media ${({ theme }) => theme.breakPoints.laptop} {
-    font-size: 1.15rem;
+    font-size: 1.25rem;
   }
 `;
 

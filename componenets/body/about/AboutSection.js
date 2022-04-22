@@ -24,13 +24,6 @@ export const About = () => {
             create eloquent, responsive, and accessible websites that provide an
             exceptional user experience.
           </StyledAboutInfo>
-          <StyledAboutInfo>
-            As a maker, the process of creating drives me. My interest in web
-            development started in the making, but I discovered later that my
-            passion for learning was even more significant. A seemingly
-            never-ending amount of new things to learn keeps me excited and
-            curious about all things web development!
-          </StyledAboutInfo>
           <StyledResumeAnchor
             downlaod
             href="/resume.pdf"

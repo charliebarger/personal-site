@@ -16,7 +16,10 @@ function MyApp({ Component, pageProps }) {
           name="viewport"
           content="width=device-width, initial-scale=1"
         ></meta>
-        <meta name="description" content="Personal Site"></meta>
+        <meta
+          name="description"
+          content="Full stack web developer with an eye for detail and a background in the visual arts. Well-versed in both back end and front end development with the ability to quickly learn new technologies as they arise."
+        ></meta>
         <meta
           name="title"
           property="og:title"
@@ -31,7 +34,7 @@ function MyApp({ Component, pageProps }) {
         <meta
           name="description"
           property="og:description"
-          content="Full stack web developer with an eye for detail and a background in the visual arts. Well-versed in both back end and front end development with the ability to quickly learn new technologies as they arise."
+          content="Personal Site"
         />
         <meta name="author" content="Charles Barger" />
       </Head>

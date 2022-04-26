@@ -20,21 +20,11 @@ function MyApp({ Component, pageProps }) {
           name="description"
           content="Full stack web developer with an eye for detail and a background in the visual arts. Well-versed in both back end and front end development with the ability to quickly learn new technologies as they arise."
         ></meta>
-        <meta
-          name="title"
-          property="og:title"
-          content="Charlie Barger | Full Stack Web Developer"
-        />
         <meta property="og:type" content="Website" />
         <meta
           name="image"
           property="og:image"
           content="https://live.staticflickr.com/65535/52030583960_b22e377590_z.jpg"
-        />
-        <meta
-          name="description"
-          property="og:description"
-          content="Personal Site"
         />
         <meta name="author" content="Charles Barger" />
       </Head>

@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import Image from "next/image";
 
 const StyledH1 = styled.h1`
   font-weight: 500;
@@ -55,6 +56,11 @@ const StyledImageWrapper = styled.div`
   box-shadow: 30px 30px 0 ${({ theme }) => theme.colors.accentColor};
 `;
 
+const StyledImage = styled(Image)`
+  width: 100%;
+  height: auto;
+`;
+
 const StyledResumeAnchor = styled.a`
   color: ${({ theme }) => theme.colors.primaryFontColor};
   font-family: ${({ theme }) => theme.fonts.sansSerifPrimary};
@@ -70,6 +76,7 @@ export {
   StyledAboutInfo,
   StyledAboutHeadshotWrapper,
   StyledImageWrapper,
+  StyledImage,
   StyledResumeAnchor,
   StyledInfoWrapper,
 };

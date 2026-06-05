@@ -36,6 +36,8 @@ const StyledHeader = styled.h4`
 `;
 
 const StyledImage = styled(Image)`
+  width: 100%;
+  height: auto;
   transition: 0.5s;
 `;
 

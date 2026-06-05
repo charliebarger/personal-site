@@ -56,6 +56,8 @@ const StyledImageWrapper = styled.div`
 `;
 
 const StyledImage = styled(Image)`
+  width: 100%;
+  height: 100%;
   object-fit: contain;
 `;
 

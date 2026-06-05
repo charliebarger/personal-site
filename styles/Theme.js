@@ -17,7 +17,7 @@ const theme = {
     primaryFontColor: "hsla(0deg 0% 0%)",
     secondaryFontColor: "hsla(0deg 0% 0% / 60%)",
     underlineColor: "hsl(356deg 100% 65%)",
-    accentColor: "hsl(180deg 63% 42%)",
+    accentColor: "oklch(68.5% 0.169 237.323)",
     backgroundColor: "hsla(360deg, 100%, 100%, 1)",
   },
   fonts: {

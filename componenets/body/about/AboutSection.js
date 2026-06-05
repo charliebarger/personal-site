@@ -1,5 +1,4 @@
 import React from "react";
-import Image from "next/image";
 import headshot from "../../../public/headshot.jpg";
 import Section from "../Section";
 import {
@@ -7,6 +6,7 @@ import {
   StyledAboutWrapper,
   StyledAboutHeadshotWrapper,
   StyledImageWrapper,
+  StyledImage,
   StyledResumeAnchor,
   StyledInfoWrapper,
 } from "./AboutStyles";
@@ -32,7 +32,7 @@ export const About = () => {
             curious about all things web development.
           </StyledAboutInfo>
           <StyledResumeAnchor
-            downlaod
+            download
             href="/resume.pdf"
             target="_blank"
             rel="noreferrer"
@@ -42,7 +42,7 @@ export const About = () => {
         </StyledInfoWrapper>
         <StyledAboutHeadshotWrapper>
           <StyledImageWrapper>
-            <Image src={headshot} alt="Headshot"></Image>
+            <StyledImage src={headshot} alt="Headshot" priority />
           </StyledImageWrapper>
         </StyledAboutHeadshotWrapper>
       </StyledAboutWrapper>

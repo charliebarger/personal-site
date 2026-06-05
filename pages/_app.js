@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "../styles/tailwind.css";
 import { Normalize } from "styled-normalize";
 import Header from "../componenets/header/Header";
 import GlobalStyles from "../styles/GlobalStyles";
@@ -30,7 +31,7 @@ function MyApp({ Component, pageProps }) {
       </Head>
       <div style={{ overflowX: "hidden", position: "relative" }}>
         <NavContext.Provider value={{ closed, setClosed }}>
-          <GlobalStyles closed={closed} />
+          <GlobalStyles $closed={closed} />
           <Normalize />
           <div id="top" style={{ paddingBottom: "75px" }} />
           <Header />

@@ -1,0 +1,55 @@
+@import "tailwindcss";
+
+@keyframes nav-slide-in {
+  0% {
+    opacity: 0;
+    transform: translateX(-25px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes nav-grow {
+  from {
+    width: 0%;
+  }
+
+  to {
+    width: 80%;
+  }
+}
+
+@layer utilities {
+  .animate-nav-slide-1 {
+    animation: nav-slide-in 0.5s ease-in-out 0.25s forwards;
+  }
+
+  .animate-nav-slide-2 {
+    animation: nav-slide-in 0.5s ease-in-out 0.5s forwards;
+  }
+
+  .animate-nav-slide-3 {
+    animation: nav-slide-in 0.5s ease-in-out 0.75s forwards;
+  }
+
+  .animate-nav-slide-4 {
+    animation: nav-slide-in 0.5s ease-in-out 1s forwards;
+  }
+
+  .animate-nav-slide-social {
+    animation: nav-slide-in 0.5s ease-in-out 1.25s forwards;
+  }
+
+  @media (min-width: 778px) {
+    .animate-nav-slide-1,
+    .animate-nav-slide-2,
+    .animate-nav-slide-3,
+    .animate-nav-slide-4,
+    .animate-nav-slide-social {
+      animation: none;
+    }
+  }
+}

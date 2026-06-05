@@ -1,16 +1,5 @@
 import styled, { keyframes } from "styled-components";
 
-const wave = keyframes`
-   0%,100% 
-    {
-      clip-path: polygon(0 42%, 13% 48%, 26% 55%, 41% 64%, 56% 65%, 69% 58%, 84% 45%, 100% 38%, 100% 100%, 0% 100%);
-    }
-    50%
-    {
-      clip-path: polygon(0 63%, 14% 57%, 25% 50%, 40% 42%, 56% 40%, 71% 44%, 84% 50%, 100% 60%, 100% 100%, 0% 100%);
-    }
-`;
-
 const pushCurrentLine = keyframes`
   0% {
     opacity: 1;
@@ -46,28 +35,20 @@ const pushNextLine = keyframes`
 `;
 
 const StyledH1 = styled.h1`
-  font-weight: 500;
+  font-weight: 400;
   margin: 0;
-  padding-bottom: 0.5rem;
   font-family: ${({ theme }) => theme.fonts.serifPrimary};
   text-align: center;
-  font-size: 2rem;
+  font-size: 1.1rem;
   margin: auto;
-  color: transparent;
-  -webkit-text-stroke: 1px ${({ theme }) => theme.colors.primaryFontColor};
+  color: oklch(48.8% 0.243 264.376);
 
-  &::before {
-    content: "Hello, I'm Charlie";
-    position: absolute;
-    color: ${({ theme }) => theme.colors.accentColor};
-    animation: ${wave} 3s ease-in-out infinite;
-  }
   @media ${({ theme }) => theme.breakPoints.mobileLg} {
-    font-size: 2.75rem;
+    font-size: 1.3rem;
   }
 
   @media ${({ theme }) => theme.breakPoints.laptop} {
-    font-size: 3rem;
+    font-size: 1.45rem;
   }
 `;
 
@@ -75,11 +56,11 @@ const StyledH2 = styled.h2`
   position: relative;
   width: min(100%, 980px);
   height: 5.75rem;
-  margin: 0.25rem auto 0;
+  margin: 0.85rem auto 0;
   padding: 0 0.25rem;
   color: ${({ theme }) => theme.colors.primaryFontColor};
   overflow: hidden;
-  font-weight: 300;
+  font-weight: 400;
   font-family: ${({ theme }) => theme.fonts.sansSerifPrimary};
   text-align: center;
   font-size: 1.45rem;
@@ -118,18 +99,35 @@ const StyledContent = styled.div`
 
 const StyledWelcomeSection = styled.section`
   position: relative;
-  min-height: calc(100vh - 75px);
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 0;
+  width: 100vw;
+  padding: 0 1.5rem;
+  margin: -1rem -1.5rem 0;
+  background: linear-gradient(121deg, #fff 0%, oklch(97% 0.014 254.604) 100%);
+
+  @media ${({ theme }) => theme.breakPoints.mobileLg} {
+    padding-right: 2rem;
+    padding-left: 2rem;
+    margin-right: -2rem;
+    margin-left: -2rem;
+  }
+
+  @media ${({ theme }) => theme.breakPoints.tablet} {
+    padding-right: 3rem;
+    padding-left: 3rem;
+    margin-right: -3rem;
+    margin-left: -3rem;
+  }
 `;
 
 const StyledWaveSprite = styled.div`
   position: absolute;
-  right: clamp(-1.25rem, -3vw, -0.5rem);
-  bottom: 0;
+  right: clamp(0.75rem, 4vw, 3rem);
+  bottom: -0.75rem;
   width: clamp(60px, 11vw, 115px);
   aspect-ratio: 375 / 400;
   cursor: pointer;

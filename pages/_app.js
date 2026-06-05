@@ -33,7 +33,6 @@ function MyApp({ Component, pageProps }) {
         <NavContext.Provider value={{ closed, setClosed }}>
           <GlobalStyles $closed={closed} />
           <Normalize />
-          <div id="top" style={{ paddingBottom: "75px" }} />
           <Header />
           <Component {...pageProps} />
           <Footer />

@@ -20,8 +20,6 @@ const GlobalStyles = createGlobalStyle`
     min-height:100vh;
     max-width: 100%;
     overflow-x: hidden;
-    background: linear-gradient(121deg,#fff 0%,oklch(97.7% 0.013 236.62) 100%);
-    background-attachment: fixed;
   }
 
   p{

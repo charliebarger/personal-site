@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import {
   StyledContent,
+  StyledHeroContact,
   StyledH1,
   StyledH2,
   StyledRotatingLine,
@@ -24,6 +25,7 @@ export const Welcome = () => {
   const [frame, setFrame] = useState(idleFrame);
   const [spriteOpacity, setSpriteOpacity] = useState(1);
   const [activeLine, setActiveLine] = useState(0);
+  const [introComplete, setIntroComplete] = useState(false);
 
   useEffect(() => {
     if (!waveDirection) return;
@@ -31,7 +33,12 @@ export const Welcome = () => {
     const frameTimer = setInterval(() => {
       setFrame((currentFrame) => {
         if (waveDirection === "forward") {
-          return currentFrame === finalFrame ? idleFrame : currentFrame + 1;
+          if (currentFrame === finalFrame) {
+            setWaveDirection("backward");
+            return finalFrame;
+          }
+
+          return currentFrame + 1;
         }
 
         if (currentFrame === idleFrame) {
@@ -75,15 +82,29 @@ export const Welcome = () => {
   }, []);
 
   useEffect(() => {
+    const introTimer = setTimeout(() => {
+      setIntroComplete(true);
+    }, 2000);
+
+    return () => clearTimeout(introTimer);
+  }, []);
+
+  useEffect(() => {
+    if (!introComplete) return;
+
     const lineTimer = setInterval(() => {
       setActiveLine((currentLine) => (currentLine + 1) % rotatingLines.length);
     }, 4200);
 
     return () => clearInterval(lineTimer);
-  }, []);
+  }, [introComplete]);
 
-  const startWaving = () => setWaveDirection("forward");
-  const stopWaving = () => setWaveDirection("backward");
+  const waveOnce = () => {
+    if (waveDirection) return;
+
+    setFrame(idleFrame);
+    setWaveDirection("forward");
+  };
 
   return (
     <StyledWelcomeSection id="welcome">
@@ -91,19 +112,25 @@ export const Welcome = () => {
         <StyledH1>Hello, I&apos;m Charlie</StyledH1>
       </StyledContent>
       <StyledH2>
-        <StyledRotatingLine key={`current-${activeLine}`} $position="current">
+        <StyledRotatingLine
+          key={`current-${activeLine}-${introComplete}`}
+          $introComplete={introComplete}
+          $position="current"
+        >
           {rotatingLines[activeLine]}
         </StyledRotatingLine>
-        <StyledRotatingLine key={`next-${activeLine}`} $position="next">
+        <StyledRotatingLine
+          key={`next-${activeLine}-${introComplete}`}
+          $introComplete={introComplete}
+          $position="next"
+        >
           {rotatingLines[(activeLine + 1) % rotatingLines.length]}
         </StyledRotatingLine>
       </StyledH2>
       <StyledWaveSprite
         tabIndex={0}
-        onBlur={stopWaving}
-        onFocus={startWaving}
-        onMouseEnter={startWaving}
-        onMouseLeave={stopWaving}
+        onFocus={waveOnce}
+        onMouseEnter={waveOnce}
         style={{ opacity: spriteOpacity }}
       >
         <span>👋 Hi there. Thanks for stopping by.</span>
@@ -115,6 +142,59 @@ export const Welcome = () => {
           width="375"
         />
       </StyledWaveSprite>
+      <StyledHeroContact aria-label="Contact links">
+        <strong>GET IN TOUCH</strong>
+        <div>
+          <a href="mailto:charliebarger96@gmail.com">
+            <i aria-hidden="true" className="hero-contact-icon hero-contact-icon--email" />
+            charliebarger96@gmail.com
+          </a>
+          <a
+            href="https://www.linkedin.com/in/charlie-barger/"
+            rel="noreferrer"
+            target="_blank"
+          >
+            <i
+              aria-hidden="true"
+              className="hero-contact-icon hero-contact-icon--linkedin"
+            />
+            LinkedIn
+          </a>
+          <a
+            href="https://github.com/charliebarger"
+            rel="noreferrer"
+            target="_blank"
+          >
+            <i aria-hidden="true" className="hero-contact-icon hero-contact-icon--github" />
+            GitHub
+          </a>
+        </div>
+        <span>
+          <svg
+            aria-hidden="true"
+            className="hero-contact-location-icon"
+            fill="none"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M12 21s7-5.33 7-12a7 7 0 1 0-14 0c0 6.67 7 12 7 12Z"
+              stroke="currentColor"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="1.8"
+            />
+            <path
+              d="M12 12.25a2.75 2.75 0 1 0 0-5.5 2.75 2.75 0 0 0 0 5.5Z"
+              stroke="currentColor"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="1.8"
+            />
+          </svg>
+          Denver, CO
+        </span>
+      </StyledHeroContact>
     </StyledWelcomeSection>
   );
 };

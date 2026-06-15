@@ -4,9 +4,7 @@ import Nav from "./Nav";
 export const Header = () => {
   return (
     <header className="absolute top-0 left-0 z-[90] flex w-screen items-center p-[22px]">
-      <div className="[font-family:'Roboto_Slab',serif] text-2xl font-semibold">
-        Charlie Barger
-      </div>
+      <div className="text-2xl font-semibold">Charlie Barger</div>
       <Hamburger />
       <Nav />
     </header>

@@ -1,7 +1,6 @@
 import { NavContext } from "../../utils/NavContext";
 import React, { useContext } from "react";
 import NavLink from "./NavLink";
-import SocialLinks from "../social/SocialLinks";
 const Nav = () => {
   const { closed, setClosed } = useContext(NavContext);
   return (
@@ -10,41 +9,41 @@ const Nav = () => {
         closed ? "left-0" : "left-full"
       }`}
     >
-      <ul className="relative mb-8 flex cursor-pointer list-none flex-col items-center gap-8 p-0 text-2xl font-extralight min-[778px]:m-0 min-[778px]:flex-row min-[778px]:text-base min-[1200px]:text-xl">
+      <ul className="relative mb-8 flex cursor-pointer list-none flex-col items-center gap-8 p-0 font-sans text-2xl font-normal min-[778px]:m-0 min-[778px]:flex-row min-[778px]:text-base min-[1200px]:text-xl">
         <NavLink
-          linkTo={"#about"}
+          linkTo={"#welcome"}
           clickHandler={setClosed}
           index={0}
           animate={closed}
         >
-          About
-        </NavLink>
-        <NavLink
-          linkTo={"#skills"}
-          clickHandler={setClosed}
-          index={1}
-          animate={closed}
-        >
-          Skills
+          Home
         </NavLink>
         <NavLink
           linkTo={"#projects"}
           clickHandler={setClosed}
-          index={2}
+          index={1}
           animate={closed}
         >
           Projects
         </NavLink>
         <NavLink
-          linkTo={"#contact"}
+          linkTo={"#about"}
+          clickHandler={setClosed}
+          index={2}
+          animate={closed}
+        >
+          About
+        </NavLink>
+        <NavLink
+          linkTo={"/resume.pdf"}
           clickHandler={setClosed}
           index={3}
           animate={closed}
+          newTab
         >
-          Contact
+          Resume
         </NavLink>
       </ul>
-      <SocialLinks animate={closed} />
     </nav>
   );
 };

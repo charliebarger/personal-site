@@ -14,7 +14,7 @@ const theme = {
     desktop: minWidth(1200),
   },
   colors: {
-    primaryFontColor: "hsla(0deg 0% 0%)",
+    primaryFontColor: "hsl(220deg 13% 18%)",
     secondaryFontColor: "hsla(0deg 0% 0% / 60%)",
     underlineColor: "hsl(356deg 100% 65%)",
     accentColor: "oklch(68.5% 0.169 237.323)",

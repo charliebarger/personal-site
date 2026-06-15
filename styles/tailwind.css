@@ -1,5 +1,13 @@
 @import "tailwindcss";
 
+@theme {
+  --font-sans: "Roboto", sans-serif;
+  --font-serif: "Roboto Slab", serif;
+  --color-base-text: hsl(220deg 13% 18%);
+  --color-muted-text: hsl(220deg 9% 42%);
+  --color-hello-blue: oklch(48.8% 0.243 264.376);
+}
+
 @keyframes nav-slide-in {
   0% {
     opacity: 0;

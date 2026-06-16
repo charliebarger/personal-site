@@ -1,16 +1,22 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "../styles/tailwind.css";
-import { Normalize } from "styled-normalize";
 import Header from "../componenets/header/Header";
-import GlobalStyles from "../styles/GlobalStyles";
 import { NavContext } from "../utils/NavContext";
-import Theme from "../styles/Theme";
 import Footer from "../componenets/footer/Footer";
 import Head from "next/head";
 function MyApp({ Component, pageProps }) {
   const [closed, setClosed] = useState(false);
+
+  useEffect(() => {
+    document.body.style.overflow = closed ? "hidden" : "";
+
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [closed]);
+
   return (
-    <Theme>
+    <>
       <Head>
         <title>Charlie Barger | Full Stack Web Developer</title>
         <meta
@@ -29,16 +35,14 @@ function MyApp({ Component, pageProps }) {
         />
         <meta name="author" content="Charles Barger" />
       </Head>
-      <div style={{ overflowX: "hidden", position: "relative" }}>
+      <div className="relative overflow-x-hidden">
         <NavContext.Provider value={{ closed, setClosed }}>
-          <GlobalStyles $closed={closed} />
-          <Normalize />
           <Header />
           <Component {...pageProps} />
           <Footer />
         </NavContext.Provider>
       </div>
-    </Theme>
+    </>
   );
 }
 

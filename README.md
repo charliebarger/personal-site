@@ -9,4 +9,4 @@ My personal portfolio site made in Next.js
 ## Tech Stack
 
 - Next.js
-- styled-components
+- Tailwind CSS

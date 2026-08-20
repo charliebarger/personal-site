@@ -14,7 +14,7 @@ export const ProjectSection = () => {
       <StyledFlexWrapper>
         <Project
           siteInfo={
-            "Blog site that allows users to create articles, save drafts, and read and comment on published articles. Built with React, Express, MongoDB, and Node."
+            "Site that allows users to create articles, save drafts, and read and comment on published articles. Built with React, Express, MongoDB, and Node."
           }
           repoLink={"https://github.com/charliebarger/dev-spot-client"}
           siteLink={"https://charliebarger.github.io/dev-spot-client/"}
